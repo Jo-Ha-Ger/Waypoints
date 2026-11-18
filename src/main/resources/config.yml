@@ -1,0 +1,36 @@
+# ------------------------------------------------------------
+#  Waypoints – settings / Einstellungen
+#  Restart the server after changes. / Nach Änderungen Server neu starten.
+# ------------------------------------------------------------
+
+# Default language: en or de
+# Standardsprache: en oder de
+default-language: en
+
+# true = use each player's game language automatically (English or German).
+#        Players can still choose with /wp language <en|de|auto>.
+# true = automatisch die Spielsprache jedes Spielers verwenden (Deutsch oder Englisch).
+#        Spieler können trotzdem selbst wählen: /wp sprache <de|en|auto>
+auto-language: true
+
+# Maximum number of waypoints per player (the death point does not count)
+# Maximale Anzahl Wegpunkte pro Spieler (der Todespunkt zählt nicht mit)
+max-waypoints: 100
+
+# Death point feature on the whole server. If true, every player can still
+# turn it on/off for themselves (/wp death or in the menu).
+# Todespunkt für den ganzen Server. Bei true kann ihn trotzdem jeder Spieler
+# für sich an/aus schalten (/wp tod oder im Menü).
+death-point: true
+
+# Distance (in blocks) at which the target counts as reached
+# Ab dieser Entfernung (in Blöcken) gilt das Ziel als erreicht
+arrival-distance: 5
+
+# Stop navigation automatically on arrival
+# Navigation bei Ankunft automatisch beenden
+stop-on-arrival: true
+
+# How often the display updates (in ticks, 20 ticks = 1 second)
+# Wie oft die Anzeige aktualisiert wird (in Ticks, 20 Ticks = 1 Sekunde)
+display-interval-ticks: 4

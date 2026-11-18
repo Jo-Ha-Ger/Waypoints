@@ -1,0 +1,32 @@
+name: Waypoints
+version: '${project.version}'
+main: io.github.johager.waypoints.WaypointsPlugin
+api-version: '26.3'
+description: Save locations, share them and navigate with an on-screen display (English/Deutsch).
+author: Jo-Ha-Ger
+website: https://github.com/Jo-Ha-Ger/Waypoints
+
+commands:
+  waypoint:
+    description: Manage waypoints and navigate
+    usage: /waypoint help
+    aliases: [wp, waypoints]
+    permission: waypoints.use
+
+permissions:
+  waypoints.use:
+    description: Use waypoints (save, navigate, list, delete)
+    default: true
+  waypoints.share:
+    description: Share waypoints with other players (/wp share, /wp show)
+    default: true
+  waypoints.admin:
+    description: Create and delete server waypoints that every player can see
+    default: op
+  waypoints.*:
+    description: All Waypoints permissions
+    default: op
+    children:
+      waypoints.use: true
+      waypoints.share: true
+      waypoints.admin: true
